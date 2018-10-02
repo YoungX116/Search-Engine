@@ -1,0 +1,710 @@
+
+===================================se221=====================================
+
+#! Deprecation: Deprecated field [inline] used, expected [source] instead
+{
+  "quality_level": 0.09717849780226138,
+  "details": {
+    "mondego_query": {
+      "quality_level": 0.2960819109658653,
+      "unknown_docs": [
+        {
+          "_index": "se221",
+          "_id": "5404"
+        },
+        {
+          "_index": "se221",
+          "_id": "6660"
+        },
+        {
+          "_index": "se221",
+          "_id": "32976"
+        },
+        {
+          "_index": "se221",
+          "_id": "33427"
+        }
+      ],
+      "hits": [
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "5404",
+            "_score": 13.262974
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "21946",
+            "_score": 9.931937
+          },
+          "rating": 1
+        },
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "6660",
+            "_score": 8.51375
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "32976",
+            "_score": 8.411432
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "33427",
+            "_score": 7.943152
+          },
+          "rating": null
+        }
+      ]
+    },
+    "machine_learning_query": {
+      "quality_level": 0,
+      "unknown_docs": [
+        {
+          "_index": "se221",
+          "_id": "20720"
+        },
+        {
+          "_index": "se221",
+          "_id": "13147"
+        },
+        {
+          "_index": "se221",
+          "_id": "24145"
+        },
+        {
+          "_index": "se221",
+          "_id": "9265"
+        },
+        {
+          "_index": "se221",
+          "_id": "31832"
+        }
+      ],
+      "hits": [
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "20720",
+            "_score": 22.478367
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "13147",
+            "_score": 22.160118
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "24145",
+            "_score": 22.041214
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "9265",
+            "_score": 21.881313
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "31832",
+            "_score": 21.8779
+          },
+          "rating": null
+        }
+      ]
+    },
+    "graduate_courses_query": {
+      "quality_level": 0,
+      "unknown_docs": [
+        {
+          "_index": "se221",
+          "_id": "7055"
+        },
+        {
+          "_index": "se221",
+          "_id": "14027"
+        },
+        {
+          "_index": "se221",
+          "_id": "23467"
+        },
+        {
+          "_index": "se221",
+          "_id": "801"
+        },
+        {
+          "_index": "se221",
+          "_id": "32055"
+        }
+      ],
+      "hits": [
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "7055",
+            "_score": 30.339193
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "14027",
+            "_score": 29.033752
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "23467",
+            "_score": 27.149624
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "801",
+            "_score": 25.281637
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "32055",
+            "_score": 25.280424
+          },
+          "rating": null
+        }
+      ]
+    },
+    "information_retrieval_query": {
+      "quality_level": 0.14606834984270647,
+      "unknown_docs": [
+        {
+          "_index": "se221",
+          "_id": "25673"
+        },
+        {
+          "_index": "se221",
+          "_id": "36471"
+        },
+        {
+          "_index": "se221",
+          "_id": "3327"
+        },
+        {
+          "_index": "se221",
+          "_id": "25450"
+        }
+      ],
+      "hits": [
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "25673",
+            "_score": 34.86109
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "36471",
+            "_score": 34.454857
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "3327",
+            "_score": 33.00789
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "14918",
+            "_score": 28.839176
+          },
+          "rating": 1
+        },
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "25450",
+            "_score": 27.77293
+          },
+          "rating": null
+        }
+      ]
+    },
+    "computer_games_query": {
+      "quality_level": 0,
+      "unknown_docs": [
+        {
+          "_index": "se221",
+          "_id": "26078"
+        },
+        {
+          "_index": "se221",
+          "_id": "30994"
+        },
+        {
+          "_index": "se221",
+          "_id": "21097"
+        },
+        {
+          "_index": "se221",
+          "_id": "5839"
+        },
+        {
+          "_index": "se221",
+          "_id": "4733"
+        }
+      ],
+      "hits": [
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "26078",
+            "_score": 27.625866
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "30994",
+            "_score": 26.993397
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "21097",
+            "_score": 24.059576
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "5839",
+            "_score": 23.081215
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "4733",
+            "_score": 22.753546
+          },
+          "rating": null
+        }
+      ]
+    },
+    "software_engineering_query": {
+      "quality_level": 0,
+      "unknown_docs": [
+        {
+          "_index": "se221",
+          "_id": "32697"
+        },
+        {
+          "_index": "se221",
+          "_id": "1362"
+        },
+        {
+          "_index": "se221",
+          "_id": "25897"
+        },
+        {
+          "_index": "se221",
+          "_id": "23690"
+        },
+        {
+          "_index": "se221",
+          "_id": "5867"
+        }
+      ],
+      "hits": [
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "32697",
+            "_score": 27.253506
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "1362",
+            "_score": 26.935946
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "25897",
+            "_score": 25.157295
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "23690",
+            "_score": 24.629684
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "5867",
+            "_score": 23.929716
+          },
+          "rating": null
+        }
+      ]
+    },
+    "student_affairs_query": {
+      "quality_level": 0,
+      "unknown_docs": [
+        {
+          "_index": "se221",
+          "_id": "14"
+        },
+        {
+          "_index": "se221",
+          "_id": "29249"
+        },
+        {
+          "_index": "se221",
+          "_id": "29304"
+        },
+        {
+          "_index": "se221",
+          "_id": "15551"
+        },
+        {
+          "_index": "se221",
+          "_id": "19515"
+        }
+      ],
+      "hits": [
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "14",
+            "_score": 26.22496
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "29249",
+            "_score": 25.057032
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "29304",
+            "_score": 22.253252
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "15551",
+            "_score": 22.175087
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "19515",
+            "_score": 21.943258
+          },
+          "rating": null
+        }
+      ]
+    },
+    "REST_query": {
+      "quality_level": 0.5296347172140421,
+      "unknown_docs": [
+        {
+          "_index": "se221",
+          "_id": "33417"
+        },
+        {
+          "_index": "se221",
+          "_id": "3942"
+        }
+      ],
+      "hits": [
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "33417",
+            "_score": 25.647678
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "30905",
+            "_score": 20.479311
+          },
+          "rating": 1
+        },
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "29230",
+            "_score": 17.581127
+          },
+          "rating": 1
+        },
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "13342",
+            "_score": 15.439507
+          },
+          "rating": 1
+        },
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "3942",
+            "_score": 13.936741
+          },
+          "rating": null
+        }
+      ]
+    },
+    "security_query": {
+      "quality_level": 0,
+      "unknown_docs": [
+        {
+          "_index": "se221",
+          "_id": "21403"
+        },
+        {
+          "_index": "se221",
+          "_id": "26694"
+        },
+        {
+          "_index": "se221",
+          "_id": "9478"
+        },
+        {
+          "_index": "se221",
+          "_id": "23816"
+        },
+        {
+          "_index": "se221",
+          "_id": "29539"
+        }
+      ],
+      "hits": [
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "21403",
+            "_score": 20.12097
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "26694",
+            "_score": 19.11488
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "9478",
+            "_score": 18.463842
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "23816",
+            "_score": 15.91364
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "29539",
+            "_score": 15.750682
+          },
+          "rating": null
+        }
+      ]
+    },
+    "Crista_Lopes_query": {
+      "quality_level": 0,
+      "unknown_docs": [
+        {
+          "_index": "se221",
+          "_id": "25447"
+        },
+        {
+          "_index": "se221",
+          "_id": "13492"
+        },
+        {
+          "_index": "se221",
+          "_id": "36231"
+        },
+        {
+          "_index": "se221",
+          "_id": "21946"
+        },
+        {
+          "_index": "se221",
+          "_id": "25177"
+        }
+      ],
+      "hits": [
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "25447",
+            "_score": 20.129782
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "13492",
+            "_score": 18.656893
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "36231",
+            "_score": 17.958853
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "21946",
+            "_score": 17.642193
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221",
+            "_type": "_doc",
+            "_id": "25177",
+            "_score": 17.395159
+          },
+          "rating": null
+        }
+      ]
+    }
+  },
+  "failures": {}
+}

@@ -1,0 +1,40 @@
+GET /se221final/_doc/_search
+{
+  "size": 200,
+  "query": {
+    "bool": {
+      "must": {
+        "match": {
+          "content": {
+          "query": "MACHINE LEARNING",
+          "fuzziness": "auto"
+          }
+        }
+      },
+      "must_not": {
+        "regexp": {
+          "link": ".*txt"
+        }
+      }
+    }
+  },
+  "highlight": {
+    "fields": {
+      "content": {}
+    },
+    "fragment_size": 300,
+    "pre_tags": ["<font color=\"red\">"],
+    "post_tags": ["</font>"]
+  }
+}
+
+
+
+GET /se221final/_doc/_search
+{
+  "query": {
+    "term": {
+      "link": "www.ics.uci.edu/~ejw/pres/stc-99/sld009.htm"
+    }
+  }
+}

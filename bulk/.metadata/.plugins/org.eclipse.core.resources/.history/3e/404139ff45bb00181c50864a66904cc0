@@ -1,0 +1,137 @@
+package bulk;
+
+import java.io.*;
+import java.util.Iterator;
+import org.apache.commons.io.FileUtils;
+import org.apache.http.HttpHost;
+import org.elasticsearch.action.ActionListener;
+import org.elasticsearch.action.bulk.BulkRequest;
+import org.elasticsearch.action.bulk.BulkResponse;
+import org.elasticsearch.action.index.IndexRequest;
+import org.elasticsearch.action.index.IndexResponse;
+import org.elasticsearch.client.RestClient;
+import org.elasticsearch.client.RestHighLevelClient;
+import org.elasticsearch.common.unit.TimeValue;
+import org.elasticsearch.common.xcontent.XContentType;
+import org.json.JSONObject;
+
+
+public class bulkindex {
+	public static void main(String args[]) throws IOException {
+		long startTime = System.currentTimeMillis();	
+		parseJson();
+		long endTime = System.currentTimeMillis();
+		System.out.println("Program running time: " + (endTime - startTime) + "ms");
+	}
+	
+	public static void parseJson() throws IOException {
+		File file = new File("webpages_clean/66/242");
+		String bookKeeping = FileUtils.readFileToString(file, "UTF-8");	
+		System.out.println(bookKeeping);
+		
+//		RestHighLevelClient client = new RestHighLevelClient(
+//		        RestClient.builder(
+//		                new HttpHost("localhost", 9200, "http")));
+//		
+//		try {
+//			File file = new File("bookkeeping.json");
+//			String bookKeeping = FileUtils.readFileToString(file);	
+//			JSONObject obj = new JSONObject(bookKeeping);	
+//			
+//			Iterator<String> iterator = obj.keySet().iterator();
+//			int count = 0;
+//			while(iterator.hasNext()) {
+//				String obj_key = iterator.next();
+//				
+//				IndexRequest indexRequest = new IndexRequest("se221", "_doc", String.valueOf(count))  
+//				        .source("filename", obj_key,
+//				                "link", obj.getString(obj_key),
+//				                "content", FileUtils.readFileToString(new File("webpages_clean/" + obj_key), "UTF-8"));
+//				
+//				indexRequest.timeout(TimeValue.timeValueSeconds(300));
+//				
+//				IndexResponse indexResponse = client.index(indexRequest);
+//				System.out.println(++count);
+//			}		
+//		} catch(Exception e) {
+//			e.printStackTrace();
+//		} finally {
+//			client.close();
+//		}
+		
+//		try {
+//			File file = new File("bookkeeping.json");
+//			String bookKeeping = FileUtils.readFileToString(file);	
+//			JSONObject obj = new JSONObject(bookKeeping);	
+//			
+//			BulkRequest request = new BulkRequest(); 
+//			
+//			Iterator<String> iterator = obj.keySet().iterator();
+//			int count = 0;
+//			while(iterator.hasNext()) {
+//				if (++count % 100 == 0) System.out.println("current processed: " + count);
+//				String obj_key = iterator.next();
+//				
+//				request.add(new IndexRequest("se221", "_doc", String.valueOf(count))  
+//				        .source("filename", obj_key,
+//				                "link", obj.getString(obj_key),
+//				                "content", FileUtils.readFileToString(new File("webpages_clean/" + obj_key))));
+//			}	
+//			
+//			request.timeout(TimeValue.timeValueMinutes(60));
+//			
+//			ActionListener<BulkResponse> listener = new ActionListener<BulkResponse>() {
+//			    @Override
+//			    public void onResponse(BulkResponse bulkResponse) {
+//			        System.out.println("success");
+//			    }
+//
+//			    @Override
+//			    public void onFailure(Exception e) {
+//			        System.out.println("failure");
+//			    }
+//			};
+//			client.bulkAsync(request, listener);		
+//		} catch(Exception e) {
+//			e.printStackTrace();
+//		} finally {
+//			client.close();
+//		}
+	}
+}
+
+//		RestHighLevelClient client = new RestHighLevelClient(
+//		        RestClient.builder(
+//		                new HttpHost("localhost", 9200, "http")));
+//		
+//		BulkRequest request = new BulkRequest(); 
+//		request.add(new IndexRequest("test", "_doc", "1")  
+//		        .source("user", "22",
+//		                "message", "trying out Elasticsearch"));
+//		request.add(new IndexRequest("test", "_doc", "2")  
+//				.source("user", "33",
+//		                "message", "trying out Elasticsearch"));
+//		request.add(new IndexRequest("test", "_doc", "3")  
+//				.source("user", "44",
+//		                "message", "trying out Elasticsearch"));
+//		
+//		BulkResponse bulkResponse = client.bulk(request);
+//
+//		ActionListener<IndexResponse> listener = new ActionListener<IndexResponse>() {
+//		    @Override
+//		    public void onResponse(IndexResponse indexResponse) {
+//		        System.out.println("success");
+//		    }
+//
+//		    @Override
+//		    public void onFailure(Exception e) {
+//		    	System.out.println("failure");
+//		    }
+//		};
+//		
+//		client.indexAsync(indexRequest, listener);
+		
+//		IndexResponse indexResponse = client.index(indexRequest);
+//		System.out.println(indexResponse.getIndex());
+		
+//		client.close();

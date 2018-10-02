@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="org.elasticsearch.client.transport.TransportClient"/>
+<fullyQualifiedTypeName name="org.elasticsearch.common.transport.TransportAddress"/>
+<fullyQualifiedTypeName name="java.net.InetAddress"/>
+<fullyQualifiedTypeName name="org.elasticsearch.transport.client.PreBuiltTransportClient"/>
+<fullyQualifiedTypeName name="org.elasticsearch.common.settings.Settings"/>
+<fullyQualifiedTypeName name="org.elasticsearch.client.RequestOptions"/>
+<fullyQualifiedTypeName name="org.elasticsearch.client.RestHighLevelClient"/>
+<fullyQualifiedTypeName name="org.elasticsearch.client.RestClient"/>
+<fullyQualifiedTypeName name="org.apache.http.HttpHost"/>
+<fullyQualifiedTypeName name="org.elasticsearch.action.index.IndexRequest"/>
+<fullyQualifiedTypeName name="org.elasticsearch.action.ActionListener"/>
+<fullyQualifiedTypeName name="org.elasticsearch.action.index.IndexResponse"/>
+<fullyQualifiedTypeName name="org.elasticsearch.action.bulk.BulkRequest"/>
+<fullyQualifiedTypeName name="org.elasticsearch.common.xcontent.XContentType"/>
+<fullyQualifiedTypeName name="org.elasticsearch.action.bulk.BulkResponse"/>
+<fullyQualifiedTypeName name="org.elasticsearch.common.unit.TimeValue"/>
+</qualifiedTypeNameHistroy>

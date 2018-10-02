@@ -1,0 +1,459 @@
+======================se221final======================
+
+GET /se221final/_rank_eval
+{
+	"templates": [
+     {
+        "id": "match_one_field_query",  
+        "template": { 
+          "inline": {
+            "query": {
+    		  "bool": {
+      		    "must": {
+        		  "match": {
+          		    "content": {
+                      "query": "{{query_string}}",
+                      "fuzziness": "auto"
+                    }
+                  }
+                },
+      			"must_not": {
+                  "regexp": {
+                    "link": ".*txt"
+                  }
+                }
+              }
+            }
+          }
+        }
+     }
+    ],
+    "requests": [
+      {
+        "id": "mondego_query",
+        "ratings": [
+          { "_index": "se221final", "_id": "21946", "rating": 1 },
+          { "_index": "se221final", "_id": "8263", "rating": 1 },
+          { "_index": "se221final", "_id": "18860", "rating": 1 }
+        ],
+        "template_id": "match_one_field_query", 
+        "params": { 
+          "query_string": "mondego"
+        }
+      },
+      {
+        "id": "machine_learning_query",
+        "ratings": [
+          { "_index": "se221final", "_id": "242", "rating": 1 },
+          { "_index": "se221final", "_id": "19780", "rating": 1 },
+          { "_index": "se221final", "_id": "25215", "rating": 1 },
+          { "_index": "se221final", "_id": "25608", "rating": 1 },
+          { "_index": "se221final", "_id": "2175", "rating": 1 }
+        ],
+        "template_id": "match_one_field_query", 
+        "params": { 
+          "query_string": "machine learning"
+        }
+      },
+      {
+        "id": "software_engineering_query",
+        "ratings": [
+          { "_index": "se221final", "_id": "32871", "rating": 1 },
+          { "_index": "se221final", "_id": "31468", "rating": 1 },
+          { "_index": "se221final", "_id": "3602", "rating": 1 },
+          { "_index": "se221final", "_id": "23274", "rating": 1 },
+          { "_index": "se221final", "_id": "34951", "rating": 1 }
+        ],
+        "template_id": "match_one_field_query", 
+        "params": { 
+          "query_string": "software engineering"
+        }
+      },
+      {
+        "id": "security_query",
+        "ratings": [
+          { "_index": "se221final", "_id": "15753", "rating": 1 },
+          { "_index": "se221final", "_id": "3602", "rating": 1 },
+          { "_index": "se221final", "_id": "29077", "rating": 1 },
+          { "_index": "se221final", "_id": "34949", "rating": 1 },
+          { "_index": "se221final", "_id": "4", "rating": 1 }
+        ],
+        "template_id": "match_one_field_query", 
+        "params": { 
+          "query_string": "security"
+        }
+      },
+      {
+        "id": "student_affairs_query",
+        "ratings": [
+          { "_index": "se221final", "_id": "28705", "rating": 1 },
+          { "_index": "se221final", "_id": "15466", "rating": 1 },
+          { "_index": "se221final", "_id": "18224", "rating": 1 },
+          { "_index": "se221final", "_id": "14396", "rating": 1 },
+          { "_index": "se221final", "_id": "751", "rating": 1 }
+        ],
+        "template_id": "match_one_field_query", 
+        "params": { 
+          "query_string": "student affairs"
+        }
+      },
+      {
+        "id": "graduate_courses_query",
+        "ratings": [
+          { "_index": "se221final", "_id": "29561", "rating": 1 },
+          { "_index": "se221final", "_id": "29855", "rating": 1 },
+          { "_index": "se221final", "_id": "11283", "rating": 1 },
+          { "_index": "se221final", "_id": "8030", "rating": 1 },
+          { "_index": "se221final", "_id": "19308", "rating": 1 }
+        ],
+        "template_id": "match_one_field_query", 
+        "params": { 
+          "query_string": "graduate courses"
+        }
+      },
+      {
+        "id": "Crista_Lopes_query",
+        "ratings": [
+          { "_index": "se221final", "_id": "5404", "rating": 1 },
+          { "_index": "se221final", "_id": "32259", "rating": 1 }
+        ],
+        "template_id": "match_one_field_query", 
+        "params": { 
+          "query_string": "Crista Lopes"
+        }
+      },
+      {
+        "id": "REST_query",
+        "ratings": [
+          { "_index": "se221final", "_id": "30905", "rating": 1 },
+          { "_index": "se221final", "_id": "13342", "rating": 1 },
+          { "_index": "se221final", "_id": "11283", "rating": 1 },
+          { "_index": "se221final", "_id": "29230", "rating": 1 },
+          { "_index": "se221final", "_id": "19780", "rating": 1 }
+        ],
+        "template_id": "match_one_field_query", 
+        "params": { 
+          "query_string": "REST"
+        }
+      },
+      {
+        "id": "computer_games_query",
+        "ratings": [
+          { "_index": "se221final", "_id": "896", "rating": 1 },
+          { "_index": "se221final", "_id": "11283", "rating": 1 },
+          { "_index": "se221final", "_id": "28735", "rating": 1 }
+        ],
+        "template_id": "match_one_field_query", 
+        "params": { 
+          "query_string": "computer games"
+        }
+      },
+      {
+        "id": "information_retrieval_query",
+        "ratings": [
+          { "_index": "se221final", "_id": "14918", "rating": 1 },
+          { "_index": "se221final", "_id": "4282", "rating": 1 },
+          { "_index": "se221final", "_id": "1442", "rating": 1 },
+          { "_index": "se221final", "_id": "1358", "rating": 1 },
+          { "_index": "se221final", "_id": "5404", "rating": 1 }
+        ],
+        "template_id": "match_one_field_query", 
+        "params": { 
+          "query_string": "information retrieval"
+        }
+      }
+    ], 
+    "metric": {
+       "dcg": {
+            "k" : 5,
+            "normalize": true
+       }
+    }
+}
+
+=============================================================================
+
+
+================================se221========================================
+
+GET /se221final/_rank_eval
+{
+	"templates": [
+     {
+        "id": "match_one_field_query",  
+        "template": { 
+          "inline": {
+            "query": {
+    		      "bool": {
+      		      "must": {
+        		      "match": {
+          		      "content": {
+                      "query": "{{query_string}}",
+                      "fuzziness": "auto"
+                    }
+                  }
+                },
+      			    "must_not": {
+                  "regexp": {
+                    "link": ".*txt"
+                  }
+                }
+              }
+            }
+          }
+        }
+     }
+    ],
+    "requests": [
+      {
+        "id": "mondego_query",
+        "ratings": [
+          { "_index": "se221final", "_id": "21946", "rating": 1 },
+          { "_index": "se221final", "_id": "8263", "rating": 1 },
+          { "_index": "se221final", "_id": "18860", "rating": 1 }
+        ],
+        "template_id": "match_one_field_query", 
+        "params": { 
+          "query_string": "mondego"
+        }
+      }
+    ], 
+    "metric": {
+       "dcg": {
+            "k" : 5,
+            "normalize": true
+       }
+    }
+}
+
+
+
+
+
+GET /se221/_rank_eval
+{
+	"templates": [
+     {
+        "id": "match_one_field_query",  
+        "template": { 
+          "inline": {
+            "query": {
+    		  "bool": {
+      		    "must": {
+        		  "match": {
+          		    "content": {
+                      "query": "{{query_string}}",
+                      "fuzziness": "auto"
+                    }
+                  }
+                },
+      			"must_not": {
+                  "regexp": {
+                    "link": ".*txt"
+                  }
+                }
+              }
+            }
+          }
+        }
+     }
+    ],
+    "requests": [
+      {
+        "id": "mondego_query",
+        "ratings": [
+          { "_index": "se221", "_id": "21946", "rating": 1 },
+          { "_index": "se221", "_id": "8263", "rating": 1 },
+          { "_index": "se221", "_id": "18860", "rating": 1 }
+        ],
+        "template_id": "match_one_field_query", 
+        "params": { 
+          "query_string": "mondego"
+        }
+      },
+      {
+        "id": "machine_learning_query",
+        "ratings": [
+          { "_index": "se221", "_id": "242", "rating": 1 },
+          { "_index": "se221", "_id": "19780", "rating": 1 },
+          { "_index": "se221", "_id": "25215", "rating": 1 },
+          { "_index": "se221", "_id": "25608", "rating": 1 },
+          { "_index": "se221", "_id": "2175", "rating": 1 }
+        ],
+        "template_id": "match_one_field_query", 
+        "params": { 
+          "query_string": "machine learning"
+        }
+      },
+      {
+        "id": "software_engineering_query",
+        "ratings": [
+          { "_index": "se221", "_id": "32871", "rating": 1 },
+          { "_index": "se221", "_id": "31468", "rating": 1 },
+          { "_index": "se221", "_id": "3602", "rating": 1 },
+          { "_index": "se221", "_id": "23274", "rating": 1 },
+          { "_index": "se221", "_id": "34951", "rating": 1 }
+        ],
+        "template_id": "match_one_field_query", 
+        "params": { 
+          "query_string": "software engineering"
+        }
+      },
+      {
+        "id": "security_query",
+        "ratings": [
+          { "_index": "se221", "_id": "15753", "rating": 1 },
+          { "_index": "se221", "_id": "3602", "rating": 1 },
+          { "_index": "se221", "_id": "29077", "rating": 1 },
+          { "_index": "se221", "_id": "34949", "rating": 1 },
+          { "_index": "se221", "_id": "4", "rating": 1 }
+        ],
+        "template_id": "match_one_field_query", 
+        "params": { 
+          "query_string": "security"
+        }
+      },
+      {
+        "id": "student_affairs_query",
+        "ratings": [
+          { "_index": "se221", "_id": "28705", "rating": 1 },
+          { "_index": "se221", "_id": "15466", "rating": 1 },
+          { "_index": "se221", "_id": "18224", "rating": 1 },
+          { "_index": "se221", "_id": "14396", "rating": 1 },
+          { "_index": "se221", "_id": "751", "rating": 1 }
+        ],
+        "template_id": "match_one_field_query", 
+        "params": { 
+          "query_string": "student affairs"
+        }
+      },
+      {
+        "id": "graduate_courses_query",
+        "ratings": [
+          { "_index": "se221", "_id": "29561", "rating": 1 },
+          { "_index": "se221", "_id": "29855", "rating": 1 },
+          { "_index": "se221", "_id": "11283", "rating": 1 },
+          { "_index": "se221", "_id": "8030", "rating": 1 },
+          { "_index": "se221", "_id": "19308", "rating": 1 }
+        ],
+        "template_id": "match_one_field_query", 
+        "params": { 
+          "query_string": "graduate courses"
+        }
+      },
+      {
+        "id": "Crista_Lopes_query",
+        "ratings": [
+          { "_index": "se221", "_id": "5404", "rating": 1 },
+          { "_index": "se221", "_id": "32259", "rating": 1 }
+        ],
+        "template_id": "match_one_field_query", 
+        "params": { 
+          "query_string": "Crista Lopes"
+        }
+      },
+      {
+        "id": "REST_query",
+        "ratings": [
+          { "_index": "se221", "_id": "30905", "rating": 1 },
+          { "_index": "se221", "_id": "13342", "rating": 1 },
+          { "_index": "se221", "_id": "11283", "rating": 1 },
+          { "_index": "se221", "_id": "29230", "rating": 1 },
+          { "_index": "se221", "_id": "19780", "rating": 1 }
+        ],
+        "template_id": "match_one_field_query", 
+        "params": { 
+          "query_string": "REST"
+        }
+      },
+      {
+        "id": "computer_games_query",
+        "ratings": [
+          { "_index": "se221", "_id": "896", "rating": 1 },
+          { "_index": "se221", "_id": "11283", "rating": 1 },
+          { "_index": "se221", "_id": "28735", "rating": 1 }
+        ],
+        "template_id": "match_one_field_query", 
+        "params": { 
+          "query_string": "computer games"
+        }
+      },
+      {
+        "id": "information_retrieval_query",
+        "ratings": [
+          { "_index": "se221", "_id": "14918", "rating": 1 },
+          { "_index": "se221", "_id": "4282", "rating": 1 },
+          { "_index": "se221", "_id": "1442", "rating": 1 },
+          { "_index": "se221", "_id": "1358", "rating": 1 },
+          { "_index": "se221", "_id": "5404", "rating": 1 }
+        ],
+        "template_id": "match_one_field_query", 
+        "params": { 
+          "query_string": "information retrieval"
+        }
+      }
+    ], 
+    "metric": {
+       "dcg": {
+            "k" : 5,
+            "normalize": true
+       }
+    }
+}
+
+=============================================================================
+
+
+======================================example================================
+
+GET /se221final/_rank_eval
+{
+	"templates": [
+     {
+        "id": "match_one_field_query",  
+        "template": { 
+          "inline": {
+            "query": {
+    		  "bool": {
+      		    "must": {
+        		  "match": {
+          		    "content": {
+                      "query": "{{query_string}}",
+                      "fuzziness": "auto"
+                    }
+                  }
+                },
+      			"must_not": {
+                  "regexp": {
+                    "link": ".*txt"
+                  }
+                }
+              }
+            }
+          }
+        }
+     }
+    ],
+    "requests": [
+      {
+        "id": "mondego_query",
+        "ratings": [
+          { "_index": "se221final", "_id": "21946", "rating": 5 },
+          { "_index": "se221final", "_id": "8263", "rating": 4 },
+          { "_index": "se221final", "_id": "18860", "rating": 3 },
+        ],
+        "template_id": "match_one_field_query", 
+        "params": { 
+          "query_string": "mondego"
+        }
+      }
+    ], 
+    "metric": {
+       "dcg": {
+            "k" : 5,
+            "normalize": true
+       }
+    }
+}
+
+===========================================================================

@@ -1,0 +1,119 @@
+package bulk;
+
+import java.io.*;
+import java.util.Iterator;
+import org.apache.commons.io.FileUtils;
+import org.apache.http.HttpHost;
+import org.elasticsearch.action.ActionListener;
+import org.elasticsearch.action.bulk.BulkRequest;
+import org.elasticsearch.action.bulk.BulkResponse;
+import org.elasticsearch.action.index.IndexRequest;
+import org.elasticsearch.action.index.IndexResponse;
+import org.elasticsearch.client.RestClient;
+import org.elasticsearch.client.RestHighLevelClient;
+import org.elasticsearch.common.xcontent.XContentType;
+import org.json.JSONObject;
+
+
+public class bulkindex {
+	public static void main(String args[]) throws IOException {
+		parseJson();
+	}
+	
+	public static void parseJson() throws IOException {
+		RestHighLevelClient client = new RestHighLevelClient(
+		        RestClient.builder(
+		                new HttpHost("localhost", 9200, "http")));
+		
+		try {
+//			RestHighLevelClient client = new RestHighLevelClient(
+//			        RestClient.builder(
+//			                new HttpHost("localhost", 9200, "http")));
+			
+			File file = new File("bookkeeping.json");
+			String bookKeeping = FileUtils.readFileToString(file);	
+			JSONObject obj = new JSONObject(bookKeeping);	
+			
+			BulkRequest request = new BulkRequest(); 
+			
+			Iterator<String> iterator = obj.keySet().iterator();
+			int count = 0;
+			while(iterator.hasNext()) {
+				if (++count % 100 == 0) System.out.println("current processed: " + count);
+				String obj_key = iterator.next();
+				
+				request.add(new IndexRequest("se221", "_doc", String.valueOf(count))  
+				        .source("filename", obj_key,
+				                "link", obj.getString(obj_key),
+				                "content", FileUtils.readFileToString(new File("webpages_clean/" + obj_key))));
+		
+//				System.out.print(obj_key);
+//				System.out.println(obj.getString(obj_key));
+//				System.out.println(FileUtils.readFileToString(new File("webpages_clean/" + obj_key)));
+			}	
+			
+			client.bulk(request);			
+		} catch(Exception e) {
+			e.printStackTrace();
+		} finally {
+			client.close();
+		}
+
+//		RestHighLevelClient client = new RestHighLevelClient(
+//		        RestClient.builder(
+//		                new HttpHost("localhost", 9200, "http")));
+//		
+//		BulkRequest request = new BulkRequest(); 
+//		request.add(new IndexRequest("test", "_doc", "1")  
+//		        .source("user", "22",
+//		                "message", "trying out Elasticsearch"));
+//		request.add(new IndexRequest("test", "_doc", "2")  
+//				.source("user", "33",
+//		                "message", "trying out Elasticsearch"));
+//		request.add(new IndexRequest("test", "_doc", "3")  
+//				.source("user", "44",
+//		                "message", "trying out Elasticsearch"));
+//		
+//		BulkResponse bulkResponse = client.bulk(request);
+	
+//		IndexRequest indexRequest = new IndexRequest("test", "_doc", "2")
+//		        .source("user", "tom",
+//		                "message", "trying out Elasticsearch");
+		
+//		ActionListener<IndexResponse> listener = new ActionListener<IndexResponse>() {
+//		    @Override
+//		    public void onResponse(IndexResponse indexResponse) {
+//		        System.out.println("success");
+//		    }
+//
+//		    @Override
+//		    public void onFailure(Exception e) {
+//		    	System.out.println("failure");
+//		    }
+//		};
+//		
+//		client.indexAsync(indexRequest, listener);
+		
+//		IndexResponse indexResponse = client.index(indexRequest);
+//		System.out.println(indexResponse.getIndex());
+		
+//		client.close();
+		                
+		
+//		File file = new File("bookkeeping.json");
+//		String bookKeeping = FileUtils.readFileToString(file);	
+//		JSONObject obj = new JSONObject(bookKeeping);
+//		
+//		String content = FileUtils.readFileToString(new File("webpages_clean/1/1"));
+//		System.out.println(content);
+//		
+//		Iterator<String> iterator = obj.keySet().iterator();
+//		while(iterator.hasNext()) {
+//			String obj_key = iterator.next();
+//			System.out.print(obj_key);
+//			System.out.println(obj.getString(obj_key));
+//			System.out.println(FileUtils.readFileToString(new File("webpages_clean/" + obj_key)));
+//		}
+		
+	}
+}

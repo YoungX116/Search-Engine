@@ -1,0 +1,726 @@
+
+==================================se221final==============================
+
+#! Deprecation: Deprecated field [inline] used, expected [source] instead
+{
+  "quality_level": 0.046927872602275655,
+  "details": {
+    "mondego_query": {
+      "quality_level": 0.46927872602275655,
+      "unknown_docs": [
+        {
+          "_index": "se221final",
+          "_id": "6660"
+        },
+        {
+          "_index": "se221final",
+          "_id": "5404"
+        },
+        {
+          "_index": "se221final",
+          "_id": "32976"
+        },
+        {
+          "_index": "se221final",
+          "_id": "20001"
+        }
+      ],
+      "hits": [
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "21946",
+            "_score": 11.804273
+          },
+          "rating": 1
+        },
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "6660",
+            "_score": 10.263375
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "5404",
+            "_score": 9.619049
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "32976",
+            "_score": 8.679254
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "20001",
+            "_score": 7.888096
+          },
+          "rating": null
+        }
+      ]
+    },
+    "machine_learning_query": {
+      "quality_level": 0,
+      "unknown_docs": [
+        {
+          "_index": "se221final",
+          "_id": "28681"
+        },
+        {
+          "_index": "se221final",
+          "_id": "23017"
+        },
+        {
+          "_index": "se221final",
+          "_id": "26376"
+        },
+        {
+          "_index": "se221final",
+          "_id": "16301"
+        },
+        {
+          "_index": "se221final",
+          "_id": "25264"
+        }
+      ],
+      "hits": [
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "28681",
+            "_score": 11.187408
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "23017",
+            "_score": 11.067256
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "26376",
+            "_score": 10.885128
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "16301",
+            "_score": 10.856394
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "25264",
+            "_score": 10.306601
+          },
+          "rating": null
+        }
+      ]
+    },
+    "graduate_courses_query": {
+      "quality_level": 0,
+      "unknown_docs": [
+        {
+          "_index": "se221final",
+          "_id": "7055"
+        },
+        {
+          "_index": "se221final",
+          "_id": "14027"
+        },
+        {
+          "_index": "se221final",
+          "_id": "31949"
+        },
+        {
+          "_index": "se221final",
+          "_id": "32055"
+        },
+        {
+          "_index": "se221final",
+          "_id": "37484"
+        }
+      ],
+      "hits": [
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "7055",
+            "_score": 18.546705
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "14027",
+            "_score": 17.175562
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "31949",
+            "_score": 15.671688
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "32055",
+            "_score": 15.530665
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "37484",
+            "_score": 15.130047
+          },
+          "rating": null
+        }
+      ]
+    },
+    "information_retrieval_query": {
+      "quality_level": 0,
+      "unknown_docs": [
+        {
+          "_index": "se221final",
+          "_id": "1202"
+        },
+        {
+          "_index": "se221final",
+          "_id": "21200"
+        },
+        {
+          "_index": "se221final",
+          "_id": "21488"
+        },
+        {
+          "_index": "se221final",
+          "_id": "25673"
+        },
+        {
+          "_index": "se221final",
+          "_id": "27768"
+        }
+      ],
+      "hits": [
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "1202",
+            "_score": 15.174401
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "21200",
+            "_score": 15.028059
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "21488",
+            "_score": 15.015465
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "25673",
+            "_score": 14.394275
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "27768",
+            "_score": 13.614651
+          },
+          "rating": null
+        }
+      ]
+    },
+    "computer_games_query": {
+      "quality_level": 0,
+      "unknown_docs": [
+        {
+          "_index": "se221final",
+          "_id": "30994"
+        },
+        {
+          "_index": "se221final",
+          "_id": "14698"
+        },
+        {
+          "_index": "se221final",
+          "_id": "394"
+        },
+        {
+          "_index": "se221final",
+          "_id": "30675"
+        },
+        {
+          "_index": "se221final",
+          "_id": "21097"
+        }
+      ],
+      "hits": [
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "30994",
+            "_score": 17.251247
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "14698",
+            "_score": 16.345108
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "394",
+            "_score": 15.858004
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "30675",
+            "_score": 15.837265
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "21097",
+            "_score": 15.783089
+          },
+          "rating": null
+        }
+      ]
+    },
+    "software_engineering_query": {
+      "quality_level": 0,
+      "unknown_docs": [
+        {
+          "_index": "se221final",
+          "_id": "7984"
+        },
+        {
+          "_index": "se221final",
+          "_id": "33358"
+        },
+        {
+          "_index": "se221final",
+          "_id": "26915"
+        },
+        {
+          "_index": "se221final",
+          "_id": "13778"
+        },
+        {
+          "_index": "se221final",
+          "_id": "7209"
+        }
+      ],
+      "hits": [
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "7984",
+            "_score": 9.930168
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "33358",
+            "_score": 9.897835
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "26915",
+            "_score": 9.399143
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "13778",
+            "_score": 9.394008
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "7209",
+            "_score": 9.252976
+          },
+          "rating": null
+        }
+      ]
+    },
+    "student_affairs_query": {
+      "quality_level": 0,
+      "unknown_docs": [
+        {
+          "_index": "se221final",
+          "_id": "68"
+        },
+        {
+          "_index": "se221final",
+          "_id": "2283"
+        },
+        {
+          "_index": "se221final",
+          "_id": "3046"
+        },
+        {
+          "_index": "se221final",
+          "_id": "3951"
+        },
+        {
+          "_index": "se221final",
+          "_id": "7315"
+        }
+      ],
+      "hits": [
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "68",
+            "_score": 15.421072
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "2283",
+            "_score": 15.421072
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "3046",
+            "_score": 15.421072
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "3951",
+            "_score": 15.421072
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "7315",
+            "_score": 15.421072
+          },
+          "rating": null
+        }
+      ]
+    },
+    "REST_query": {
+      "quality_level": 0,
+      "unknown_docs": [
+        {
+          "_index": "se221final",
+          "_id": "17782"
+        },
+        {
+          "_index": "se221final",
+          "_id": "8082"
+        },
+        {
+          "_index": "se221final",
+          "_id": "35422"
+        },
+        {
+          "_index": "se221final",
+          "_id": "9619"
+        },
+        {
+          "_index": "se221final",
+          "_id": "19759"
+        }
+      ],
+      "hits": [
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "17782",
+            "_score": 9.29574
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "8082",
+            "_score": 8.2803135
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "35422",
+            "_score": 7.9441133
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "9619",
+            "_score": 7.336057
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "19759",
+            "_score": 6.851862
+          },
+          "rating": null
+        }
+      ]
+    },
+    "security_query": {
+      "quality_level": 0,
+      "unknown_docs": [
+        {
+          "_index": "se221final",
+          "_id": "23132"
+        },
+        {
+          "_index": "se221final",
+          "_id": "10434"
+        },
+        {
+          "_index": "se221final",
+          "_id": "30606"
+        },
+        {
+          "_index": "se221final",
+          "_id": "17899"
+        },
+        {
+          "_index": "se221final",
+          "_id": "9403"
+        }
+      ],
+      "hits": [
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "23132",
+            "_score": 8.285808
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "10434",
+            "_score": 8.051025
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "30606",
+            "_score": 7.6225076
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "17899",
+            "_score": 7.48157
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "9403",
+            "_score": 7.408736
+          },
+          "rating": null
+        }
+      ]
+    },
+    "Crista_Lopes_query": {
+      "quality_level": 0,
+      "unknown_docs": [
+        {
+          "_index": "se221final",
+          "_id": "13492"
+        },
+        {
+          "_index": "se221final",
+          "_id": "36231"
+        },
+        {
+          "_index": "se221final",
+          "_id": "25447"
+        },
+        {
+          "_index": "se221final",
+          "_id": "22767"
+        },
+        {
+          "_index": "se221final",
+          "_id": "27531"
+        }
+      ],
+      "hits": [
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "13492",
+            "_score": 19.14851
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "36231",
+            "_score": 18.799318
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "25447",
+            "_score": 17.53904
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "22767",
+            "_score": 17.442862
+          },
+          "rating": null
+        },
+        {
+          "hit": {
+            "_index": "se221final",
+            "_type": "_doc",
+            "_id": "27531",
+            "_score": 17.440376
+          },
+          "rating": null
+        }
+      ]
+    }
+  },
+  "failures": {}
+}

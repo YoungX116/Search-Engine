@@ -1,0 +1,36 @@
+package bulk;
+
+import java.io.*;
+import java.util.Iterator;
+import org.apache.commons.io.FileUtils;
+import org.json.JSONObject;
+
+
+public class bulkindex {
+	public static void main(String args[]) throws IOException {
+		parseJson();
+	}
+	
+	public static void parseJson() throws IOException {
+		RestHighLevelClient client = new RestHighLevelClient(
+		        RestClient.builder(
+		                new HttpHost("localhost", 9200, "http"));
+		                
+		
+//		File file = new File("bookkeeping.json");
+//		String bookKeeping = FileUtils.readFileToString(file);	
+//		JSONObject obj = new JSONObject(bookKeeping);
+//		
+//		String content = FileUtils.readFileToString(new File("webpages_clean/1/1"));
+//		System.out.println(content);
+//		
+//		Iterator<String> iterator = obj.keySet().iterator();
+//		while(iterator.hasNext()) {
+//			String obj_key = iterator.next();
+//			System.out.print(obj_key);
+//			System.out.println(obj.getString(obj_key));
+//			System.out.println(FileUtils.readFileToString(new File("webpages_clean/" + obj_key)));
+//		}
+		
+	}
+}

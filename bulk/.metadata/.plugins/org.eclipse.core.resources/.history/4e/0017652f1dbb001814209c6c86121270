@@ -1,0 +1,87 @@
+package bulk;
+
+import java.io.*;
+import java.net.InetAddress;
+import java.util.Iterator;
+import org.apache.commons.io.FileUtils;
+import org.json.JSONObject;
+import org.elasticsearch.action.ActionListener;
+import org.elasticsearch.action.bulk.BulkRequest;
+import org.elasticsearch.action.bulk.BulkResponse;
+import org.elasticsearch.action.index.IndexRequest;
+import org.elasticsearch.action.index.IndexResponse;
+import org.elasticsearch.client.RequestOptions;
+import org.elasticsearch.client.transport.TransportClient;
+import org.elasticsearch.common.settings.Settings;
+import org.elasticsearch.common.transport.TransportAddress;
+import org.elasticsearch.transport.client.PreBuiltTransportClient;
+
+public class bulkindex {
+	public static void main(String args[]) throws IOException {
+		parseJson();
+	}
+	
+	public static void parseJson() throws IOException {
+		TransportClient client = new PreBuiltTransportClient(Settings.EMPTY)
+		        .addTransportAddress(new TransportAddress(InetAddress.getByName("localhost"), 9200));
+//		BulkRequest request = new BulkRequest();
+//		request.add(new IndexRequest("test", "_doc", "1")  
+//				.source("user", "kimchy",
+//		                "postDate", "2018",
+//		                "message", "trying out Elasticsearch"));
+//		
+//		ActionListener<BulkResponse> listener = new ActionListener<BulkResponse>() {
+//		    @Override
+//		    public void onResponse(BulkResponse bulkResponse) {
+//		        System.out.println("success");
+//		    }
+//
+//		    @Override
+//		    public void onFailure(Exception e) {
+//		    	System.out.println("failure");
+//		    }
+//		};
+//		
+//		BulkResponse bulkResponse = client.bulk(request);
+//		
+//		
+//		BulkResponse bulkResponse = client.bulk(request, listener);
+
+		IndexRequest indexRequest = new IndexRequest("posts", "doc", "1")
+		        .source("user", "tom",
+		                "postDate", "2018",
+		                "message", "trying out Elasticsearch");
+		client.indexAsync(request, RequestOptions.DEFAULT, listener);
+		ActionListener<IndexResponse> listener = new ActionListener<IndexResponse>() {
+		    @Override
+		    public void onResponse(IndexResponse indexResponse) {
+		        
+		    }
+
+		    @Override
+		    public void onFailure(Exception e) {
+		        
+		    }
+		};
+		
+		
+		
+		
+		
+//		File file = new File("bookkeeping.json");
+//		String bookKeeping = FileUtils.readFileToString(file);	
+//		JSONObject obj = new JSONObject(bookKeeping);
+//		
+//		String content = FileUtils.readFileToString(new File("webpages_clean/1/1"));
+//		System.out.println(content);
+//		
+//		Iterator<String> iterator = obj.keySet().iterator();
+//		while(iterator.hasNext()) {
+//			String obj_key = iterator.next();
+//			System.out.print(obj_key);
+//			System.out.println(obj.getString(obj_key));
+//			System.out.println(FileUtils.readFileToString(new File("webpages_clean/" + obj_key)));
+//		}
+		
+	}
+}

@@ -1,0 +1,39 @@
+PUT se221final
+{
+  "settings": {
+    "index": {
+      "analysis": {
+        "analyzer": {
+          "link_analyzer": {
+            "type": "custom",
+            "tokenizer": "uax_url_email"     
+          },
+          "content_analyzer": {
+            "type": "custom",
+            "tokenizer": "standard",
+            "char_filter":  [ "html_strip" ],
+            "filter": ["lowercase"]
+          }
+        }
+      }
+    }
+  },
+  "mappings": {
+    "_doc": {
+      "dynamic": "false",
+      "properties": {
+        "filename": {
+          "type": "keyword"
+        },
+        "link": {
+          "type": "text",
+          "analyzer": "link_analyzer"
+        },
+        "content": {
+          "type": "text",
+          "analyzer": "content_analyzer"
+        }      
+      }
+    }
+  }
+}

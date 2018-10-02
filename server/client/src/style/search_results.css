@@ -1,0 +1,19 @@
+html {
+  overflow-y: scroll;
+}
+
+.card-title {
+  color: DarkBlue;
+}
+
+a {
+  cursor: pointer;
+}
+
+.pagination li.first {
+  display: none;
+}
+
+.pagination li.last {
+  display: none;
+}
